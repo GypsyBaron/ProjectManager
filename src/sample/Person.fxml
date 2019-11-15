@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PersonController">
+   <children>
+      <VBox prefHeight="420.0" prefWidth="600.0" HBox.hgrow="ALWAYS">
+         <HBox.margin>
+            <Insets top="20.0" />
+         </HBox.margin>
+         <children>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="265.0" text="Person login" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="userLogin" prefHeight="31.0" prefWidth="256.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="50.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="385.0" text="Person password" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="userPass" prefHeight="31.0" prefWidth="373.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="30.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="402.0" text="Person name" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="userName" prefHeight="31.0" prefWidth="371.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="30.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="256.0" text="Person surname" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="20.0" right="30.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="userSurname" prefHeight="31.0" prefWidth="254.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="30.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#changePersonInfo" prefHeight="31.0" prefWidth="113.0" text="Save changes" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</HBox>
